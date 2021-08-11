@@ -1,0 +1,32 @@
+FRONT
+1º - iniciar proyecto angular (y comprobar)
+2º - instalar bootstrap
+3º - generar modelo
+4º - generar componentes
+5º - app-routing
+6º - router-outlet en app.component.html
+7º - importar reactiveformsmodule en app.module.ts
+8º - instalar e importar en module.ts, la librería toastr
+9º -  formGroup y formControlName en componente addCard (hay que importar el modelo Card de los models)
+10º - comprobar el ngSubmit() del ts del componente addCard
+
+BACK
+11º - iniciar proyecto node
+12º - instalar nodemon y script startdev
+13º - generar base de datos en mondoDBcompass
+14º - crear model en back
+15º - crear controller en back
+16º - crear route en back
+17º - en algún momento, instalar dotenv(para la conn con la bd) y cors(para conectar back con front)
+
+
+18º - Crear servicio en el FRONT
+19º - importar HttpClientModule en app.module FRONT
+20º - importar httpclientmodule en el servicio del FRONT
+21º - Comprobar post desde FRONT (componente add-card)
+22º - Vista lista de cartas
+23º - Importar "toastr", dataService y model Card al componente CARDS (listado todas cartas)
+24º - Hacer GET en Front y Back de todas las cartas y comprobar
+25º - Renderizar las cartas
+
+26º - Hacer componente add-deck. En él, html, hacer un form y un selector de cartas. Para ello, ¿hacer un getCards en el mismo componente o se puede llamar al del otro componente?

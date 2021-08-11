@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="title">{{ title | uppercase }}</span>
+                    <form class="mt-3" [formGroup]="cardForm" (ngSubmit)="addCard()">
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Nombre</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="name">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Color</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="color">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Maná</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                                <input type="number" class="form-control" formControlName="mana">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Tipo</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="type">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Expansión</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="expansion">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Habilidad</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="skill">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Fuerza</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" formControlName="power">
+                            </div>
+                            <label class="col-sm-2 col-form-label">Resistencia</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" formControlName="toughness">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Imagen</label>
+                            <div class="col-sm-10">
+                                <input type="image" class="form-control">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button routerLink="/" class="btn btn-secondary btn-lg float-start">INICIO</button>
+                            <button type="submit" [disabled]="cardForm.invalid"
+                                class="btn btn-primary btn-lg float-end">ACEPTAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

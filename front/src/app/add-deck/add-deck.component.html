@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="title">{{ title | uppercase }}</span>
+                    <form class="mt-3" [formGroup]="deckForm" (ngSubmit)="addDeck()">
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Nombre</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="name">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Color/es</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="colors">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Dinámica</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="dynamic">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Planeswalker</label>
+                            <div class="col-sm-1">
+                                <input type="checkbox" formControlName="planeswalker">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Nombre Planeswalker</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" formControlName="name_planeswalker">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <button routerLink="/" class="btn btn-secondary btn-lg float-start">INICIO</button>
+                            <button type="submit" [disabled]=""
+                                class="btn btn-primary btn-lg float-end">ACEPTAR</button>
+                        </div>
+
+                        <!-- MOSTRAR CARTAS PARA AÑADIR AL MAZO -->
+                        <app-cards></app-cards>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
